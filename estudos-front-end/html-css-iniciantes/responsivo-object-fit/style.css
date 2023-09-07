@@ -1,0 +1,30 @@
+@charset "UFT-8";
+
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    max-width: 960px;
+    background-color: #f7f7f7;
+    margin: 0px auto;
+}
+
+.cover img {
+    height: 100%;
+    object-fit: cover;
+    object-position: top right;
+}
+
+.texto {
+    align-self: center;
+}
+
+p {
+    max-width: 60ch;
+}

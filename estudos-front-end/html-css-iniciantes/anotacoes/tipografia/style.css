@@ -1,0 +1,13 @@
+p {
+    font-size: 2rem;        /* tamanho da fonte */
+    font-family: Georgia, 'Times New Roman', Times, serif; /* estilo da escrita */
+    font-weight: bold;  /* peso da fonte*/
+    font-style: italic; /* estilo do texto */
+    line-height: 1.2;   /* altura de cada linha do texto */
+    text-decoration: none;  /* decoração do texto */
+    text-transform: uppercase; /* mudar a forma da fonte */
+    text-indent: 5rem;      /* espaço no inicio do parágrafo*/
+    text-align: left;   /* alinhamento do texto*/
+    text-shadow: 2px 2px 5px black;     /* deixar sombra no texto*/
+    letter-spacing: 0.95rem;    /* espaçamento entre as letras*/
+}
