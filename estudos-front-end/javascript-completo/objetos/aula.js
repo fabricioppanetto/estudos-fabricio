@@ -14,3 +14,12 @@ var quadrado = {
         return this.lados * lado;
     },
 }
+
+var height = 120;
+var menu = {
+    width: 800,
+    height: 50,
+    metadeHeight() {
+        return this.height / 2;
+    },
+}
