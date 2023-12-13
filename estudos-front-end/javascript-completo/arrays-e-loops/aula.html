@@ -7,13 +7,56 @@
 </head>
 <body>
     <script>
+        // arrays
 
         var videoGames = ['Switch','PS4','XBOX'];
         console.log(videoGames[2]);
 
-        for (var numero = 0; numero <= 10; numero) {
-         }
 
+        // for loop
+
+        for (var numero = 0; numero <= 10; numero++) {
+            console.log(numero);
+        }
+
+        // var loop
+        // soma de 1 em 1
+        var i = 0;    
+        while (i < 10) {
+            console.log(i);
+            i++;
+        }
+
+        // soma de 5 em 5
+        var abc = 0;
+        while (abc < 10) {
+            console.log(abc);
+            abc = abc + 5;
+        }
+
+        var videoGames = ['Switch', 'PS4','Xbox','3DS'];
+        for (var i = 0; i < videoGames.length; i++) {
+            console.log(videoGames[i])
+        }
+
+        var videoGames = ['Switch', 'PS4','Xbox','3DS'];
+        for (var item = 0; item < videoGames.length; item++) {
+            console.log(videoGames[item]);
+            if(videoGames[item] === 'PS4') {
+                break;
+            }
+        } 
+
+        videoGames.forEach(function(fabricio, index, array) {
+            console.log(fabricio, index, array)
+        });
+
+        var maria = 0;
+        var maximo = 50;
+        for(;maria <= maximo;) {
+            console.log(maria);
+            maria = maria + 5;
+        }
     </script>
 </body>
 </html>
