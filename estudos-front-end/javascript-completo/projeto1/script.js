@@ -1,33 +1,21 @@
-const animais = document.getElementById('animais');
-console.log(animais);
+// Retorne no console todas as imagens do site
+const todasImagens = document.querySelectorAll('img');
+console.log(todasImagens);
 
-// Seleciona pela classe, retorna uma HTMLCollection
-const gridSection = document.getElementsByClassName('grid-section');
-const contato = document.getElementsByClassName('grid-section contato');
+// Retorne no console apenas as imagens que comecaram com a palavra imagem
+const imgImagem = document.querySelectorAll('[src^="img/imagem"]');
+console.log(imgImagem);
 
-console.log(gridSection, contato);
-
-// Seleciona todas UL's, retorna uma HTMLCOllection
-const ul = document.getElementsByTagName('ul');
-console.log(ul);
-
-// Retorna o primeiro alemento
-console.log(gridSection[0]);
-
-// Retorna a primeira li do site
-const primeiraLi = document.querySelector('li');
-console.log(primeiraLi);
-
-// Retorna a primeira ul do site
-const primeiraUl = document.querySelector('ul');
-console.log(primeiraUl);
-
-// Retorna o primeiro link interno do site
-const linkInternos = document.querySelector('[href^="#"]');
+// Selecione todos os links internos (onde o href comeca com #)
+const linkInternos = document.querySelectorAll('[href^="#"]');
 console.log(linkInternos);
 
-// Retorna todas as img que esta dentro da classe .animais
-const animaisImg = document.querySelectorAll('.animais img');
-console.log(animaisImg[1]);
+// Selecione o primeiro h2 dentro de .animais-descricao
+const primeiroH2 = document.querySelector('.animais-descricao h2');
+console.log(primeiroH2);
 
+// Selecione o ultimo p do site
+const paragrafos = document.querySelectorAll('p');
+console.log(paragrafos[paragrafos.length - 1]);
+// console.log(paragrafos[--paragrafos.length]); tambem funciona dessa forma
 
