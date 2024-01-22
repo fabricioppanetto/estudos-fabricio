@@ -15,5 +15,35 @@ console.log(h2Left);
 
 
 const rect = primeiroH2.getBoundingClientRect();
-console.log(rect);
+console.log(rect.top);
 
+if(rect.top < 0) {
+    console.log('Voce passou do elemento');
+};
+
+
+console.log(
+    window.innerWidth, // width da janela
+    window.outerWidth, // soma dev tools tambem
+    window.innerHeight, // height da janela
+    window.outerHeight, // soma a barra de endereco
+    
+    window.pageYOffset, // distancia total do scroll horizontal
+    window.pageXOffset, // distancia total do scroll vertical
+);
+
+if(window.innerWidth < 600) {
+    console.log('Tela menor que 600px de largura');
+};
+
+if(window.innerHeight < 600) {
+    console.log('Tela menor que 600px de altura');
+};
+
+
+const small = window.matchMedia('(max-width: 600px)').matches;
+if(small) {
+    console.log('Tela pequena');
+} else {
+    console.log('Tela grande');
+}; 
