@@ -2,12 +2,12 @@ const img = document.querySelector('img');
 
 // Exemplo 1
 img.addEventListener('click', function() {
-    console.log('Clicou');
+    // console.log('Clicou');
 });
 
 // Exemplo 2
 function callback(event) {
-    console.log(event);
+    // console.log(event);
 }
 
 img.addEventListener('click', callback);
@@ -20,7 +20,7 @@ function callbackLista(event) {
     const target = event.target; // onde o clique ocorreu
     const type = event.type; // tipo de evento
     const path = event.path;
-    console.log(currentTarget, target, type, path);
+    // console.log(currentTarget, target, type, path);
 }
 
 imagensLista.addEventListener('click', callbackLista);
@@ -31,7 +31,7 @@ const linkExterno = document.querySelector('a[href^="http"]');
 
 function clickNoLink(event) {
     event.preventDefault();
-    console.log(event.currentTarget.href);
+    // console.log(event.currentTarget.href);
 }
 
 linkExterno.addEventListener('click', clickNoLink);
@@ -62,3 +62,16 @@ function handleKeyboard(event) {
 }
 
 window.addEventListener('keydown', handleKeyboard);
+
+// forEach
+// O metodo addEventListener e adicionado a um unico elemento, entao e necessario um loop entre elementos de uma lista, para adicionarmos a cada um deles.
+
+const imgs = document.querySelectorAll('img');
+
+function handleImg(event) {
+    console.log(event.currentTarget.getAttribute('src'))
+}
+
+imgs.forEach(function(img) {
+    img.addEventListener('click', handleImg);
+})

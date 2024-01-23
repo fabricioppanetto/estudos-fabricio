@@ -5,6 +5,10 @@
     text-decoration: none;
 }
 
+html.textomaior {
+    font-size: 150%;
+}
+
 img {
     display: block;
     max-width: 100%;
