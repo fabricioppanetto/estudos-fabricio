@@ -38,8 +38,8 @@ const listaArray1 = Array.prototype.slice.call(lista);
 const listaArray2 = from(lista);
 
 const Carro = {
-    marca = 'Ford',
-    preco = 2000,
+    marca: 'Ford',
+    preco: 2000,
     andar() {
         return true;
     } 
